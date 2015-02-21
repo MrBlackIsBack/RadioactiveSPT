@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RadioactiveSPT:jar">
+    <output-path>$PROJECT_DIR$/../../1.7Server/plugins</output-path>
+    <root id="archive" name="RadioactiveSPT.jar">
+      <element id="module-output" name="RadioactiveSPT" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>

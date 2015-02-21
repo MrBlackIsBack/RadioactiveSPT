@@ -1,0 +1,13 @@
+main: com.gmail.mrblackdev.radioactivespt.Core
+name: SPT
+version: 1.0
+author: Mr_Black_Is_Back
+
+commands:
+   spt:
+      description: SPT base command.
+      usage: /<command> strength
+
+permissions:
+   spt.strength:
+      default: op
