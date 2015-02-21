@@ -1,17 +1,8 @@
 package com.gmail.mrblackdev.radioactivespt;
 
-import org.bukkit.Bukkit;
-import org.bukkit.event.Event;
-import org.bukkit.event.EventPriority;
-import org.bukkit.event.Listener;
-import org.bukkit.permissions.Permissible;
-import org.bukkit.permissions.Permission;
-import org.bukkit.plugin.*;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.io.File;
 import java.util.HashMap;
-import java.util.Set;
+
 
 /**
  * Copyright @ Mr_Black_Is_Back (C)
@@ -27,8 +18,13 @@ import java.util.Set;
  */
 public class Core extends JavaPlugin {
 
-    // STP Cooldown:
-    public HashMap<String, Long> cooldowns = new HashMap<String, Long>();
+    // Strength Cooldown:
+    public HashMap<String, Long> Scooldowns = new HashMap<String, Long>();
+    // Speed Cooldown:
+    public HashMap<String, Long> SPcooldowns = new HashMap<String, Long>();
+    // Fire Resistance Cooldown:
+    public HashMap<String, Long> Fcooldowns = new HashMap<String, Long>();
+
 
     /*
     Main class, conatins the onEnable, onDisable, registerCommands and registerEvents Methods.
@@ -48,7 +44,6 @@ public class Core extends JavaPlugin {
     }
 
     public void registerEvents() {
-        PluginManager  pm = Bukkit.getServer().getPluginManager();
 
 
     }
