@@ -61,7 +61,7 @@ public class SPTCommand implements CommandExecutor {
                         // No cooldown found or cooldown has expired, save new cooldown
                         plugin.Scooldowns.put(p.getName(), System.currentTimeMillis());
                         p.sendMessage(ChatColor.GOLD + "You have been given strength 2 for 1 minute!");
-                        p.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 1200, 1));
+                        p.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 1200, 0));
                         return true;
                     } else if (args[0].equalsIgnoreCase("speed")) {
                         int cooldownTime = 900; // Get number of seconds from wherever you want
